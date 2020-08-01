@@ -5,3 +5,11 @@
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-hipsters.svg)](https://forthebadge.com)
+
+Tech
+
+- [ ] ReactJS
+- [ ] TypeScript
+- [ ] Webpack 5
+- [ ] Tailwind CSS
+- [ ] RecoilJS
