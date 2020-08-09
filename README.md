@@ -13,3 +13,7 @@ Tech
 - [ ] Webpack 5
 - [ ] Tailwind CSS
 - [ ] RecoilJS
+
+
+Design Reference:
+https://static.dribbble.com/users/12748/screenshots/12091473/downloads/dribbble-bookstore-maciejkotula@2x.png
