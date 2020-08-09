@@ -1,8 +1,11 @@
 const path = require('path');
-const webpack = require("webpack");
+const webpack = require('webpack');
 
 const config = {
   mode: 'development',
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   entry: {
     app: './src/index.js',
   },
@@ -13,13 +16,13 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
-        loader: "babel-loader",
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
         options: {
           presets: [
-            "@babel/env",
-            "@babel/preset-react"
+            '@babel/env',
+            '@babel/preset-react'
           ],
         },
       },
