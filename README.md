@@ -1,5 +1,15 @@
-<img src="logo.png" width="50%">
+<img src="logo.png" width="100%">
 
-Simple, light-weight Web app to browse and search for software development book titles. Made by developer, for developers 🤓
+<p style="text-align: center;">
+  Simple, light-weight Web app to browse and search for software development book titles. Made by developer, for developers 🤓
+</p>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-hipsters.svg)](https://forthebadge.com)
+
+Tech
+
+- [ ] ReactJS
+- [ ] TypeScript
+- [ ] Webpack 5
+- [ ] Tailwind CSS
+- [ ] RecoilJS
