@@ -1,0 +1,21 @@
+.root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.container {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  max-width: var(--app-max-width);
+  min-width: var(--app-min-width);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .05);
+}

@@ -1,0 +1,110 @@
+.rootnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-black-color);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.action__icon {
+  color: var(--text-primary-color);
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #FFFFFF;
+  width: var(--app-max-width);
+  padding: 20px 0px 0 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+  position: fixed;
+  top: 0;
+  left: calc((100% - var(--app-max-width)) / 2);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  margin: 40px 20px 10px 20px;
+  color: var(--text-black-color);
+}
+
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.list__item:first-child {
+  margin-left: 20px;
+}
+
+.list__item:last-child {
+  margin-right: 20px;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px 0px 5px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.list__item span {
+  white-space: nowrap;
+  margin: 0 10px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--text-passive-color);
+}
+
+.list__item_active span {
+  margin: 0 10px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--text-primary-color);
+}
+
+.list__item_active:after {
+  content: '';
+  height: 3px;
+  margin-top: 10px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--primary-color);
+}
