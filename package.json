@@ -1,0 +1,39 @@
+{
+  "name": "batja",
+  "version": "1.0.0",
+  "description": "<img src=\"logo.png\" width=\"50%\">",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server --hot=true --live-reload=true",
+    "dev:build": "node_modules/.bin/webpack --mode=development",
+    "prod:build": "node_modules/.bin/webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhywiranata/batja.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhywiranata/batja/issues"
+  },
+  "homepage": "https://github.com/adhywiranata/batja#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "html-loader": "^1.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
