@@ -1,11 +1,26 @@
 .card {
   padding: 10px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
 }
 
+.cover {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 12px 12px 17px 5px rgba(0, 0, 0, .1);
+  margin-bottom: 20px;
+}
+
+.cover__img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
 .title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-black-color);
   line-height: 1.6rem;
   margin: 0;

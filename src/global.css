@@ -2,7 +2,7 @@
   --primary-color: #ee6c4d;
   --secondary-color: #3d5a80;
   --text-black-color: #293241;
-  --text-passive-color: #aaaaaa;
+  --text-passive-color: #888888;
   --text-primary-color: #ee6c4d;
   --text-secondary-color: #3d5a80;
   --app-max-width: 100%;
@@ -35,12 +35,4 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: var(--text-black-color);
-}
-
-section {
-  background-color: #FAFAFA;
-  padding: 50px;
-  padding-top: 200px;
-  box-sizing: border-box;
-  min-height: 100vh;
 }

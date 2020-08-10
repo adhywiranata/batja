@@ -2,16 +2,18 @@ import React from 'react';
 
 import './normalize.css';
 import './global.css';
-import {root, container} from './app.style.css';
+import * as css from './app.style.css';
 
 import Header from './ui-kit/Header';
 import BookCard from './ui-kit/BookCard';
 
 const App = () => (
-  <div className={root}>
-    <div className={container}>
+  <div className={css.root}>
+    <div className={css.container}>
       <Header />
-      <section>
+      <section className={css.booklist}>
+        <BookCard />
+        <BookCard />
         <BookCard />
       </section>
     </div>
