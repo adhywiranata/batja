@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/webpack-dev-server --hot=true --live-reload=true",
     "dev:build": "node_modules/.bin/webpack --mode=development",
-    "prod:build": "node_modules/.bin/webpack --mode=production"
+    "prod:build": "node_modules/.bin/webpack --mode=production",
+    "extract": "node_modules/.bin/formatjs extract",
+    "compile": "node_modules/.bin/formatjs compile"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@formatjs/cli": "^2.6.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
     "html-loader": "^1.1.0",
@@ -34,8 +37,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.10.0"
+    "react-icons": "^3.10.0",
+    "react-intl": "^5.4.6",
+    "regenerator": "^0.14.7"
   }
 }

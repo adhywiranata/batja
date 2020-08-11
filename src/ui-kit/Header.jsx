@@ -1,6 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { FiMenu, FiSearch } from 'react-icons/fi';
+import {FormattedMessage} from 'react-intl';
 
 import * as css from './header.css';
 
@@ -20,7 +21,13 @@ const Header = ({activeNav = 'Populer'}) => (
         <span className={css.logo}>ba.tja</span>
         <FiSearch className={css.action__icon} />
       </div>
-      <h1>Jelajah Jendela Ilmu.</h1>
+      <h1>
+        <FormattedMessage
+          id="3RRC6J"
+          defaultMessage="Jelajah Jendela Ilmu."
+          description="Title of header UI"
+        />
+      </h1>
       <div className={css.container}>
         <nav className={css.nav}>
           <ul className={css.list}>

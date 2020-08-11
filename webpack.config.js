@@ -21,8 +21,20 @@ const config = {
         loader: 'babel-loader',
         options: {
           presets: [
-            '@babel/env',
-            '@babel/preset-react'
+            // [
+              '@babel/env',
+              // {
+              //   useBuiltIns: "entry",
+              //   corejs: 3,
+              //   targets: {
+              //     browsers: [
+              //       "last 2 versions",
+              //       "IE >= 9"
+              //     ]
+              //   }
+              // }
+            // ],
+            '@babel/preset-react',
           ],
         },
       },
@@ -49,9 +61,11 @@ const config = {
     publicPath: '/dist/',
     compress: true,
     port: 1234,
-    open: true,
+    // open: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };
 
 module.exports = (env, argv) => {
