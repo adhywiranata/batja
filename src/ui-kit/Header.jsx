@@ -1,12 +1,12 @@
 import React from 'react';
 import classnames from 'classnames';
-import { FiMenu, FiSearch } from 'react-icons/fi';
+import {FiMenu, FiSearch } from 'react-icons/fi';
 import {FormattedMessage} from 'react-intl';
 
 import * as css from './header.css';
 
 const NAV_ITEMS = [
-  'Populer',
+  'Popular',
   'Front-End',
   'DevOps',
   'Back-End',
@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   'Soft Skill',
 ];
 
-const Header = ({activeNav = 'Populer'}) => (
+const Header = ({activeNav = 'Popular'}) => (
   <header>
       <div className={css.rootnav}>
         <FiMenu className={css.action__icon} />
