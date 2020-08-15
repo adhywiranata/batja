@@ -14,10 +14,12 @@ const NAV_ITEMS = [
   'Soft Skill',
 ];
 
-const Header = ({activeNav = 'Popular'}) => (
+const Header = ({activeNav = 'Popular', toggleSidebar}) => (
   <header>
       <div className={css.rootnav}>
-        <FiMenu className={css.action__icon} />
+        <button className={css.clearbtn} onClick={toggleSidebar}>
+          <FiMenu className={css.action__icon} />
+        </button>
         <span className={css.logo}>ba.tja</span>
         <FiSearch className={css.action__icon} />
       </div>

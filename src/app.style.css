@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,7 +17,7 @@
   background-color: #FAFAFA;
   padding-top: 200px;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 100%;
   max-width: var(--app-max-width);
   min-width: var(--app-min-width);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .05);
