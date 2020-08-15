@@ -21,7 +21,7 @@
 
 .title {
   font-size: 0.9rem;
-  color: var(--text-black-color);
+  color: var(--text-normal-color);
   line-height: 1.6rem;
   margin: 0;
 }

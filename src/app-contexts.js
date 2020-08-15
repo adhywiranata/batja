@@ -25,3 +25,5 @@ export const defaultLocaleContextValue = {
 };
 
 export const AppLocaleContext = createContext(defaultLocaleContextValue);
+
+export const AppThemeContext = createContext('light');

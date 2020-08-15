@@ -10,8 +10,10 @@ const config = {
     app: './src/index.js',
   },
   output: {
+    publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js',
   },
   module: {
     rules: [
@@ -19,24 +21,6 @@ const config = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: [
-            // [
-              '@babel/env',
-              // {
-              //   useBuiltIns: "entry",
-              //   corejs: 3,
-              //   targets: {
-              //     browsers: [
-              //       "last 2 versions",
-              //       "IE >= 9"
-              //     ]
-              //   }
-              // }
-            // ],
-            '@babel/preset-react',
-          ],
-        },
       },
       {
         test: /\.html$/i,

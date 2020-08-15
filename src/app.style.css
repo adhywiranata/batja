@@ -14,7 +14,7 @@
 .container {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  background-color: #FAFAFA;
+  background-color: var(--app-background-color);
   padding-top: 200px;
   box-sizing: border-box;
   min-height: 100%;
