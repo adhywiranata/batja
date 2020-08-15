@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 import * as css from './sidebar.css'
+import {AppLocaleContext} from '../app-contexts';
 
 const Sidebar = ({ isSidebarVisible, toggleSidebar }) => {
+  const localeContext = useContext(AppLocaleContext);
+  const setSidebarLocale = (locale) => localeContext.setValue(locale);
+
   return (
     <>
       <div
@@ -12,6 +16,9 @@ const Sidebar = ({ isSidebarVisible, toggleSidebar }) => {
           transition: '0.5s',
         }}
       >
+        languages: {localeContext.value.lang}
+        <button onClick={() => setSidebarLocale('id')}>ID</button>
+        <button onClick={() => setSidebarLocale('en')}>EN</button>
       </div>
       <div
         className={css.overlay}
