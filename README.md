@@ -6,5 +6,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-hipsters.svg)](https://forthebadge.com)
 
-Design Reference:
+## Reference
+
+Design:
 https://static.dribbble.com/users/12748/screenshots/12091473/downloads/dribbble-bookstore-maciejkotula@2x.png
